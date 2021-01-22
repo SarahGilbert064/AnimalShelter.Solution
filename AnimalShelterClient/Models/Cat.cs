@@ -23,5 +23,7 @@ namespace AnimalShelterClient.Models
 
       return catList;
     }
+
+    
   }
 }

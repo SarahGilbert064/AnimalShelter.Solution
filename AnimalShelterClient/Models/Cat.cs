@@ -13,17 +13,17 @@ namespace AnimalShelterClient.Models
     public string Breed { get; set; }
     public string Age { get; set; }
 
-    public static List<Cat> GetCats();
+    public static List<Cat> GetCats()
     {
       var apiCallTask = ApiHelper.GetAll();
       var result = apiCallTask.Result;
 
-      JArray jsonResponse = JsonCovert.DeserializedObject<JArray>(result);
-      List<Cat> catList = JsonCovert.DeserializedObject<List<Cat>>(JsonResponse.ToString());
+      JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
+      List<Cat> catList = JsonConvert.DeserializeObject<List<Cat>>(jsonResponse.ToString());
 
       return catList;
     }
 
-    
+
   }
 }

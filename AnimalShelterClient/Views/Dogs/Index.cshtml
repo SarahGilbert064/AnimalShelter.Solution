@@ -1,0 +1,20 @@
+<h1>Adopt a Dog!</h1>
+
+<h3>Find a forever friend with one of our amazing doggos!</h3>
+
+@using AnimalShelterClient.Models;
+@model List<AnimalShelterClient.Models.Dog>;
+
+  <ol>
+    @foreach (Dog dog in Model)
+    {
+      <ul>
+        <li>ID: @dog.DogId</li>
+        <li>Name: @dog.Name</li>
+        <li>Breed: @dog.Breed</li>
+        <li>Age: @dog.Age</li>
+      </ul>
+      <a href="/Dogs/Details/@dog.DogId)"><p>View Details</p></a>
+      <br>
+    }
+  </ol>

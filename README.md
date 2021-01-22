@@ -145,29 +145,29 @@ You can now type the follow code to launch the program...
 
 <code>dotnet run</code>
 
-The program should launch using your default web browser at URL: localhost:5000.
+The program should launch using your default web browser at URL: localhost:5004.
 
 ## **Using Swagger Documentation**
-To explore the AnimalShelter API with NSwag, launch the project using <code>dotnet run</code> with the Terminal or Powershell and input the following URL into your browser: <code>http://localhost:5000/swagger</code>
+To explore the AnimalShelter API with NSwag, launch the project using <code>dotnet run</code> with the Terminal or Powershell and input the following URL into your browser: <code>http://localhost:5004/swagger</code>
 
 ## **Endpoints**
-Base URL: <code>http://localhost:5000</code>
+Base URL: <code>http://localhost:5004</code>
 
 ### **HTTP Request Structure**
-<code>GET /api/cat
-POST /api/cat
-GET /api/cat/{id}
-PUT /api/cat/{id}
-DELETE /api/cat/{id}</code>
+<code>GET /api/cat</code>
+<code>POST /api/cat</code>
+<code>GET /api/cat/{id}</code>
+<code>PUT /api/cat/{id}</code>
+<code>DELETE /api/cat/{id}</code>
 
-<code>GET /api/dog
-POST /api/dog
-GET /api/dog/{id}
-PUT /api/dog/{id}
-DELETE /api/dog/{id}</code>
+<code>GET /api/dog</code>
+<code>POST /api/dog</code>
+<code>GET /api/dog/{id}</code>
+<code>PUT /api/dog/{id}</code>
+<code>DELETE /api/dog/{id}</code>
 
 ### **Example Query**
-<code>https://localhost:5000/api/cat/5</code>
+<code>https://localhost:5004/api/cat/5</code>
 
 ### **Sample JSON Response**
 <code>{

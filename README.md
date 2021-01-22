@@ -154,28 +154,33 @@ To explore the AnimalShelter API with NSwag, launch the project using <code>dotn
 Base URL: <code>http://localhost:5004</code>
 
 ### **HTTP Request Structure**
-<code>GET /api/cat</code>
-<code>POST /api/cat</code>
-<code>GET /api/cat/{id}</code>
-<code>PUT /api/cat/{id}</code>
-<code>DELETE /api/cat/{id}</code>
-
-<code>GET /api/dog</code>
-<code>POST /api/dog</code>
-<code>GET /api/dog/{id}</code>
-<code>PUT /api/dog/{id}</code>
-<code>DELETE /api/dog/{id}</code>
+```
+GET /api/cat
+POST /api/cat
+GET /api/cat/{id}
+PUT /api/cat/{id}
+DELETE /api/cat/{id}
+```
+```
+GET /api/dog
+POST /api/dog
+GET /api/dog/{id}
+PUT /api/dog/{id}
+DELETE /api/dog/{id}
+```
 
 ### **Example Query**
 <code>https://localhost:5004/api/cat/5</code>
 
 ### **Sample JSON Response**
-<code>{
+```
+{
     "Id": 5,
     "Name": "Charlie",
     "Breed": "Russian Blue",
     "Age: "2 years old.",
-} </code>
+}
+```
 
 ## **Known Bugs**
 There are no known bugs

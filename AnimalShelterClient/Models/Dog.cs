@@ -15,7 +15,7 @@ namespace AnimalShelterClient.Models
 
     public static List<Dog> GetDogs()
     {
-      var apiCallTask = ApiHelper.GetAll();
+      var apiCallTask = DogApiHelper.GetAll();
       var result = apiCallTask.Result;
 
       JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);

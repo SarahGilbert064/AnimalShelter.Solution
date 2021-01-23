@@ -4,7 +4,7 @@ Updated: [1-22-2021]
 
 ## **Project Description**
 
-This project was created to help better my understanding with API's and how to build them. I created an Animal Shelter API, where both cats and dogs can be added into the database with all of their information. The user can also edit and delete current cats and dogs held at the shelter. This project was created with full CRUD functionality.
+This project was created to help better my understanding with API's and how to build them. I created an Animal Shelter API, where both cats and dogs can be added into the database with all of their information. The user can also edit and delete current cats and dogs held at the shelter. This project was created with full CRUD functionality. Though not required for this project, I was able to create a functioning client side which will allow the user to see all adoptable cats and dogs in the API database.
 
 
 ## **Required for Use**
@@ -116,6 +116,14 @@ Then open MySQL Workbench and select the Local instance 3306 server. You will ne
 
 3) Once the project has finished downloading, use the terminal/console to navigate to the "__AnimalShelter.Solution__" folder of the project.
 
+#### **Client Side Web Application**
+
+To access the client side of this application, navigate to "__AnimalShelter.Solution/AnimalShelterClient__" folder of this
+project and do <code>dotnet build</code> followed by <code>dotnet run</code> , then input the following URL into your browser: <code>http://localhost:5000</code>
+
+Navigate to: <code>http://localhost:5000/Cats</code> to see all adoptable cats in the database.
+
+Navigate to: <code>http://localhost:5000/Dogs</code> to see all adoptable dogs in the database.
 
 **Setup Database Connection**
 
@@ -181,6 +189,7 @@ DELETE /api/dog/{id}
     "Age: "2 years old.",
 }
 ```
+
 
 ## **Known Bugs**
 There are no known bugs
